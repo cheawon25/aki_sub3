@@ -1,0 +1,71 @@
+*{margin: 0; padding: 0;}
+body{font-family: 'NanumSquareRound'; font-size: 20px; line-height: 25px; color: #5d423b;}
+
+/* 배너 */
+#eventbanner{margin: auto; background: url(../images/bannerbg.png) no-repeat; background-size: cover; height: 250px; position: relative; overflow: hidden;}
+#eventbanner img{display: block; position: absolute;}
+.eventtext {
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.giftbox{top: 25px; left: 65%; transform: translateX(-30%);}
+.balloon1{bottom: -50px; left: 3.5%; animation: ani2 5s linear infinite;}
+.balloon2{bottom: -200px; left: 14%; animation: ani1 5s linear infinite;}
+.balloon3{bottom: -50px; left: 27%; animation: ani3 5s linear infinite;}
+.balloon4{bottom: -250px; left: 40%; animation: ani2 5s linear infinite;}
+.balloon5{bottom: -40px; left: 67%; animation: ani1 5s linear infinite;}
+.balloon6{bottom: -80px; left: 76%; animation: ani3 5s linear infinite;}
+.balloon7{bottom: -70px; left: 85%; animation: ani2 5s linear infinite;}
+
+@keyframes ani1{
+  0%{bottom: -335px;}
+  35%{bottom: 280px;}
+  100%{bottom: 280px;}
+}
+
+@keyframes ani2{
+  0%{bottom: -354px;}
+  40%{bottom: 280px;}
+  100%{bottom: 280px;}
+}
+
+@keyframes ani3{
+  0%{bottom: -231px;}
+  50%{bottom: 280px;}
+  100%{bottom: 280px;}
+}
+
+/* 콘텐츠 */
+.nav{float: right; font-size: 18px; font-weight: bold; padding: 30px 20px; text-transform: uppercase;}
+.navpoint{color: #f26b5e;}
+section{width: 1320px; margin: auto;}
+section h1,h2{text-transform: uppercase; text-align: center;}
+section h1{font-size: 50px; padding-top: 110px; font-family: 'CookieRunOTF-Bold'; line-height: 50px; text-shadow: 4px 2px rgba(93, 66, 59, 0.2);}
+section h2{margin: 20px 0 30px; font-size: 22px; font-weight: bold;}
+
+/* 탭 안 */
+.tabcontent li{float: left; margin: 0 30px 60px;}
+
+.tabnav .All a{padding-left: 60px; background: url(../images/allicon.png) no-repeat 20px;}
+.tabnav .All a:hover,
+.tabnav .All a.active{
+  color:#fcfcee; background: #eabd6d url(../images/allicon_hover.png) no-repeat 20px;
+}
+.tabnav .Store a{padding-left: 59px; background: url(../images/storeicon.png) no-repeat 20px;}
+.tabnav .Store a:hover,
+.tabnav .Store a.active{
+  color:#fcfcee; background: #eabd6d url(../images/storeicon_hover.png) no-repeat 20px;
+}
+.tabnav .Online a{padding-left: 63px; background: url(../images/onlineicon.png) no-repeat 20px;}
+.tabnav .Online a:hover,
+.tabnav .Online a.active{
+  color:#fcfcee; background: #eabd6d url(../images/onlineicon_hover.png) no-repeat 20px;
+}
+
+/* 팝업창 */
+.popup1, .popup2, .popup3{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 50; display: none;}
+.popup1 div, .popup2 div, .popup3 div{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.popup1 .close, .popup2 .close, .popup3 .close{position: absolute; top: 5%; right: 2%;}
+.close{opacity: 0.7;}
+.close:hover{opacity: 1;}
